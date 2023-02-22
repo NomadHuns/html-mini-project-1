@@ -18,7 +18,7 @@
 <body>
       <div class="d-flex justify-content-center">
             <div class="text-center fs-1 my-5">
-                  구인해요
+                  <a href="/home.html" class="no_under_line_link">구인해요</a>
             </div>
       </div>
 
@@ -31,10 +31,10 @@
                   <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                         <ul class="navbar-nav my-nav-bar">
                               <li class="nav-item fs-4 text-center">
-                                    <a class="nav-link" href="">채용정보</a>
+                                    <a class="nav-link" href="/boardListForm.html">채용정보</a>
                               </li>
                               <li class="nav-item fs-4 text-center">
-                                    <a class="nav-link" href="">인재정보</a>
+                                    <a class="nav-link" href="/userList.html">인재정보</a>
                               </li>
                               <form class="d-flex">
                                     <button class="btn btn-primary my-button-no-round" type="button"
@@ -44,10 +44,10 @@
                                           placeholder="기업 검색">
                               </form>
                               <li class="nav-item fs-4 text-center">
-                                    <a class="nav-link" href="">로그인</a>
+                                    <a class="nav-link" href="/userLoginForm.html">로그인</a>
                               </li>
                               <li class="nav-item fs-4 text-center">
-                                    <a class="nav-link" href="">회원가입</a>
+                                    <a class="nav-link" href="/userJoinForm.html">회원가입</a>
                               </li>
                         </ul>
                   </div>
@@ -55,27 +55,20 @@
             </div>
       </nav>
       <!-- 헤더 경계선 -->
-      <div class="p-3">
-            <h1 style="text-align: center;">인재 목록</h1>
-      </div>
       <div class="container my-3 py-3 px-3">
-            <div class="row">
-                  <div class="col-md-6 m-3">
-                  </div>
-                  <div class="col-md-5 px-3 m-3">
-                        <form class="d-flex">
-                              <input class="form-control me-2" type="text" placeholder="Search">
-                              <button class="btn btn-primary" type="button">Search</button>
-                        </form>
-                  </div>
+            <div class="p-3">
+                  <h2 style="text-align: center;">인재 목록</h2>
             </div>
-
-      </div>
-      <div class="container my-3 py-3 px-3">
-            <h3>현재 올리신 공고에 대한 추천 인재들 입니다.</h3>
+            <div class="d-flex justify-content-end mb-2">
+                  <select class="form-select" style="width: 123px;">
+                        <option>관련도순</option>
+                        <option> 연차순</option>
+                        <option> 날짜순</option>
+                  </select>
+            </div>
             <div class="my-border-color-default p-3">
                   <!-- 카드 들어갈 곳 -->
-                  <div class="row">
+                  <div class="row gx-3">
                         <!-- 반복문 -->
                         <div class="col-md-3 py-2">
                               <div id="userImage1Border" class="card col-lg-12">
