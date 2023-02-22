@@ -18,7 +18,7 @@
 <body>
       <div class="d-flex justify-content-center">
             <div class="text-center fs-1 my-5">
-                  <a href="/home.html" class="no_under_line_link">구인해요</a>
+                  구인해요
             </div>
       </div>
 
@@ -31,10 +31,10 @@
                   <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                         <ul class="navbar-nav my-nav-bar">
                               <li class="nav-item fs-4 text-center">
-                                    <a class="nav-link" href="/boardListForm.html">채용정보</a>
+                                    <a class="nav-link" href="">채용정보</a>
                               </li>
                               <li class="nav-item fs-4 text-center">
-                                    <a class="nav-link" href="/userList.html">인재정보</a>
+                                    <a class="nav-link" href="">인재정보</a>
                               </li>
                               <form class="d-flex">
                                     <button class="btn btn-primary my-button-no-round" type="button"
@@ -44,46 +44,59 @@
                                           placeholder="기업 검색">
                               </form>
                               <li class="nav-item fs-4 text-center">
-                                    <a class="nav-link" href="/userLoginForm.html">로그인</a>
+                                    <a class="nav-link" href="">로그인</a>
                               </li>
                               <li class="nav-item fs-4 text-center">
-                                    <a class="nav-link" href="/userJoinForm.html">회원가입</a>
+                                    <a class="nav-link" href="">회원가입</a>
                               </li>
                         </ul>
                   </div>
+
             </div>
       </nav>
       <!-- 헤더 경계선 -->
+      <div class="p-3">
+            <h1 style="text-align: center;">인재 목록</h1>
+      </div>
       <div class="container my-3 py-3 px-3">
-            <div class="p-3">
-                  <h2 style="text-align: center;">인재 목록</h2>
+            <div class="row">
+                  <div class="col-md-6 m-3">
+                  </div>
+                  <div class="col-md-5 px-3 m-3">
+                        <form class="d-flex">
+                              <input class="form-control me-2" type="text" placeholder="Search">
+                              <button class="btn btn-primary" type="button">Search</button>
+                        </form>
+                  </div>
             </div>
-            <div class="d-flex justify-content-end mb-2">
-                  <select class="form-select" style="width: 123px;">
-                        <option>관련도순</option>
-                        <option> 연차순</option>
-                        <option> 날짜순</option>
-                  </select>
-            </div>
+
+      </div>
+      <div class="container my-3 py-3 px-3">
+            <h3>현재 올리신 공고에 대한 추천 인재들 입니다.</h3>
             <div class="my-border-color-default p-3">
                   <!-- 카드 들어갈 곳 -->
-                  <div class="row gx-3">
+                  <div class="row">
                         <!-- 반복문 -->
                         <div class="col-md-3 py-2">
-                              <div class="card col-lg-12">
-                                    <img class="card-img-top" style="height: 100px;" src="/images/newjeans.jpg"
-                                          alt="Card image">
-                                    <div class="card-body">
-                                          <div class="my-text-ellipsis">
-                                                <h5>김이름</h5>
+                              <div id="userImage1Border" class="card col-lg-12">
+                                    <a href="/userDetail.html" class="no_under_line_link">
+                                          <div id="userImage1" onmouseenter="mouseEnterImages(this)"
+                                                onmouseleave="mouseLeaveImages(this)">
+                                                <img class="card-img-top" style="height: 100px;"
+                                                      src="/images/newjeans.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                      <div class="my-text-ellipsis">
+                                                            <h5>김이름</h5>
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            IT직 경력 1년차
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            자기소개문
+                                                      </div>
+                                                </div>
                                           </div>
-                                          <div class="my-text-ellipsis">
-                                                IT직 경력 1년차
-                                          </div>
-                                          <div class="my-text-ellipsis">
-                                                자기소개문
-                                          </div>
-                                    </div>
+                                    </a>
                                     <div class="card-footer d-flex justify-content-between">
                                           <div>상세보기</div>
                                           <div><i id="heart" class="fa-regular fa-heart my-xl my-cursor fa-lg"></i>
@@ -93,20 +106,25 @@
                         </div>
                         <!-- 반복문 종료 -->
                         <div class="col-md-3 py-2">
-                              <div class="card col-lg-12">
-                                    <img class="card-img-top" style="height: 100px;" src="/images/newjeans.jpg"
-                                          alt="Card image">
-                                    <div class="card-body">
-                                          <div class="my-text-ellipsis">
-                                                <h5>김네임</h5>
+                              <div id="userImage2Border" class="card col-lg-12">
+                                    <a href="/userDetail.html" class="no_under_line_link">
+                                          <div id="userImage2" onmouseenter="mouseEnterImages(this)"
+                                                onmouseleave="mouseLeaveImages(this)">
+                                                <img class="card-img-top" style="height: 100px;"
+                                                      src="/images/newjeans.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                      <div class="my-text-ellipsis">
+                                                            <h5>김네임</h5>
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            IT직 신입
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            자기소개문
+                                                      </div>
+                                                </div>
                                           </div>
-                                          <div class="my-text-ellipsis">
-                                                IT직 신입
-                                          </div>
-                                          <div class="my-text-ellipsis">
-                                                자기소개문
-                                          </div>
-                                    </div>
+                                    </a>
                                     <div class="card-footer d-flex justify-content-between">
                                           <div>상세보기</div>
                                           <div><i id="heart" class="fa-regular fa-heart my-xl my-cursor fa-lg"></i>
@@ -115,20 +133,25 @@
                               </div>
                         </div>
                         <div class="col-md-3 py-2">
-                              <div class="card col-lg-12">
-                                    <img class="card-img-top" style="height: 100px;" src="/images/newjeans.jpg"
-                                          alt="Card image">
-                                    <div class="card-body">
-                                          <div class="my-text-ellipsis">
-                                                <h5>이이름</h5>
+                              <div id="userImage3Border" class="card col-lg-12">
+                                    <a href="/userDetail.html" class="no_under_line_link">
+                                          <div id="userImage3" onmouseenter="mouseEnterImages(this)"
+                                                onmouseleave="mouseLeaveImages(this)">
+                                                <img class="card-img-top" style="height: 100px;"
+                                                      src="/images/newjeans.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                      <div class="my-text-ellipsis">
+                                                            <h5>이이름</h5>
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            IT직 경력 3년차
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            자기소개문
+                                                      </div>
+                                                </div>
                                           </div>
-                                          <div class="my-text-ellipsis">
-                                                IT직 경력 3년차
-                                          </div>
-                                          <div class="my-text-ellipsis">
-                                                자기소개문
-                                          </div>
-                                    </div>
+                                    </a>
                                     <div class="card-footer d-flex justify-content-between">
                                           <div>상세보기</div>
                                           <div><i id="heart" class="fa-regular fa-heart my-xl my-cursor fa-lg"></i>
@@ -137,20 +160,25 @@
                               </div>
                         </div>
                         <div class="col-md-3 py-2">
-                              <div class="card col-lg-12">
-                                    <img class="card-img-top" style="height: 100px;" src="/images/newjeans.jpg"
-                                          alt="Card image">
-                                    <div class="card-body">
-                                          <div class="my-text-ellipsis">
-                                                <h5>이네임</h5>
+                              <div id="userImage4Border" class="card col-lg-12">
+                                    <a href="/userDetail.html" class="no_under_line_link">
+                                          <div id="userImage4" onmouseenter="mouseEnterImages(this)"
+                                                onmouseleave="mouseLeaveImages(this)">
+                                                <img class="card-img-top" style="height: 100px;"
+                                                      src="/images/newjeans.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                      <div class="my-text-ellipsis">
+                                                            <h5>이네임</h5>
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            IT직 신입
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            자기소개문
+                                                      </div>
+                                                </div>
                                           </div>
-                                          <div class="my-text-ellipsis">
-                                                IT직 신입
-                                          </div>
-                                          <div class="my-text-ellipsis">
-                                                자기소개문
-                                          </div>
-                                    </div>
+                                    </a>
                                     <div class="card-footer d-flex justify-content-between">
                                           <div>상세보기</div>
                                           <div><i id="heart" class="fa-regular fa-heart my-xl my-cursor fa-lg"></i>
@@ -161,22 +189,27 @@
                   </div>
             </div>
             <div class="p-3">
-                  <div class="row gx-3">
+                  <div class="row">
                         <div class="col-md-3 py-2">
-                              <div class="card col-lg-12">
-                                    <img class="card-img-top" style="height: 100px;" src="/images/newjeans.jpg"
-                                          alt="Card image">
-                                    <div class="card-body">
-                                          <div class="my-text-ellipsis">
-                                                <h5>박이름</h5>
+                              <div id="userImage5Border" class="card col-lg-12">
+                                    <a href="/userDetail.html" class="no_under_line_link">
+                                          <div id="userImage5" onmouseenter="mouseEnterImages(this)"
+                                                onmouseleave="mouseLeaveImages(this)">
+                                                <img class="card-img-top" style="height: 100px;"
+                                                      src="/images/newjeans.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                      <div class="my-text-ellipsis">
+                                                            <h5>박이름</h5>
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            IT직 경력 5년차
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            자기소개문
+                                                      </div>
+                                                </div>
                                           </div>
-                                          <div class="my-text-ellipsis">
-                                                IT직 경력 5년차
-                                          </div>
-                                          <div class="my-text-ellipsis">
-                                                자기소개문
-                                          </div>
-                                    </div>
+                                    </a>
                                     <div class="card-footer d-flex justify-content-between">
                                           <div>상세보기</div>
                                           <div><i id="heart" class="fa-regular fa-heart my-xl my-cursor fa-lg"></i>
@@ -185,20 +218,25 @@
                               </div>
                         </div>
                         <div class="col-md-3 py-2">
-                              <div class="card col-lg-12">
-                                    <img class="card-img-top" style="height: 100px;" src="/images/newjeans.jpg"
-                                          alt="Card image">
-                                    <div class="card-body">
-                                          <div class="my-text-ellipsis">
-                                                <h5>박네임</h5>
+                              <div id="userImage6Border" class="card col-lg-12">
+                                    <a href="/userDetail.html" class="no_under_line_link">
+                                          <div id="userImage6" onmouseenter="mouseEnterImages(this)"
+                                                onmouseleave="mouseLeaveImages(this)">
+                                                <img class="card-img-top" style="height: 100px;"
+                                                      src="/images/newjeans.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                      <div class="my-text-ellipsis">
+                                                            <h5>박네임</h5>
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            IT직 신입
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            자기소개문
+                                                      </div>
+                                                </div>
                                           </div>
-                                          <div class="my-text-ellipsis">
-                                                IT직 신입
-                                          </div>
-                                          <div class="my-text-ellipsis">
-                                                자기소개문
-                                          </div>
-                                    </div>
+                                    </a>
                                     <div class="card-footer d-flex justify-content-between">
                                           <div>상세보기</div>
                                           <div><i id="heart" class="fa-regular fa-heart my-xl my-cursor fa-lg"></i>
@@ -207,20 +245,25 @@
                               </div>
                         </div>
                         <div class="col-md-3 py-2">
-                              <div class="card col-lg-12">
-                                    <img class="card-img-top" style="height: 100px;" src="/images/newjeans.jpg"
-                                          alt="Card image">
-                                    <div class="card-body">
-                                          <div class="my-text-ellipsis">
-                                                <h5>최이름</h5>
+                              <div id="userImage7Border" class="card col-lg-12">
+                                    <a href="/userDetail.html" class="no_under_line_link">
+                                          <div id="userImage7" onmouseenter="mouseEnterImages(this)"
+                                                onmouseleave="mouseLeaveImages(this)">
+                                                <img class="card-img-top" style="height: 100px;"
+                                                      src="/images/newjeans.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                      <div class="my-text-ellipsis">
+                                                            <h5>최이름</h5>
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            IT직 경력 7년차
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            자기소개문
+                                                      </div>
+                                                </div>
                                           </div>
-                                          <div class="my-text-ellipsis">
-                                                IT직 경력 7년차
-                                          </div>
-                                          <div class="my-text-ellipsis">
-                                                자기소개문
-                                          </div>
-                                    </div>
+                                    </a>
                                     <div class="card-footer d-flex justify-content-between">
                                           <div>상세보기</div>
                                           <div><i id="heart" class="fa-regular fa-heart my-xl my-cursor fa-lg"></i>
@@ -229,20 +272,25 @@
                               </div>
                         </div>
                         <div class="col-md-3 py-2">
-                              <div class="card col-lg-12">
-                                    <img class="card-img-top" style="height: 100px;" src="/images/newjeans.jpg"
-                                          alt="Card image">
-                                    <div class="card-body">
-                                          <div class="my-text-ellipsis">
-                                                <h5>최네임</h5>
+                              <div id="userImage8Border" class="card col-lg-12">
+                                    <a href="/userDetail.html" class="no_under_line_link">
+                                          <div id="userImage8" onmouseenter="mouseEnterImages(this)"
+                                                onmouseleave="mouseLeaveImages(this)">
+                                                <img class="card-img-top" style="height: 100px;"
+                                                      src="/images/newjeans.jpg" alt="Card image">
+                                                <div class="card-body">
+                                                      <div class="my-text-ellipsis">
+                                                            <h5>최네임</h5>
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            IT직 신입
+                                                      </div>
+                                                      <div class="my-text-ellipsis">
+                                                            자기소개문
+                                                      </div>
+                                                </div>
                                           </div>
-                                          <div class="my-text-ellipsis">
-                                                IT직 신입
-                                          </div>
-                                          <div class="my-text-ellipsis">
-                                                자기소개문
-                                          </div>
-                                    </div>
+                                    </a>
                                     <div class="card-footer d-flex justify-content-between">
                                           <div>상세보기</div>
                                           <div><i id="heart" class="fa-regular fa-heart my-xl my-cursor fa-lg"></i>
@@ -253,16 +301,15 @@
                   </div>
             </div>
       </div>
-
       <script>
             function mouseEnterImages(e) {
-                  // console.log(e.getAttribute('id'))
                   let id = e.getAttribute('id');
-                  $("#" + id).addClass("border border-dark");
+                  $("#" + id + "Border").addClass("border border-dark");
             }
+
             function mouseLeaveImages(e) {
                   let id = e.getAttribute('id');
-                  $("#" + id).removeClass("border border-dark");
+                  $("#" + id + "Border").removeClass("border border-dark");
             }
       </script>
       <!-- 푸터 경계선 -->
