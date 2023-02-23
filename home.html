@@ -155,15 +155,15 @@
     </div>
     <script>
         function mouseEnterImages(e) {
-            console.log(document.getElementById(e.getAttribute('id')).getAttribute('id'));
-            let id = document.getElementById(e.getAttribute('id')).getAttribute('id');
+            console.log(e.getAttribute('id'));
+            let id = e.getAttribute('id');
             $("#" + id).removeClass("col");
             $("#" + id).addClass("col-6");
         }
 
         function mouseLeaveImages(e) {
-            console.log(document.getElementById(e.getAttribute('id')).getAttribute('id'));
-            let id = document.getElementById(e.getAttribute('id')).getAttribute('id');
+            console.log(e.getAttribute('id'));
+            let id = e.getAttribute('id');
             $("#" + id).removeClass("col-6");
             $("#" + id).addClass("col");
         }
